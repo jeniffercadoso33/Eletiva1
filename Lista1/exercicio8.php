@@ -16,7 +16,7 @@
         if($_SERVER['REQUEST_METHOD'] == 'POST')
             {
                 $raio = $_POST["raio"];
-                $pi = 3.14159
+                $pi = 3.14159;
                 $areacirculo = $pi * ($raio ** 2);
                 echo "A área do círculo é: $areacirculo";
             }
