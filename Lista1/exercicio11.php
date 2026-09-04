@@ -18,10 +18,11 @@
 </html>
 
 <?php
-{
-    $base = $_POST["base"];
-    $expoente = $_POST["expoente"];
-    $potencia = $base ** $expoente;
-    echo "A $base elevada a $expoente é: $potencia";
-}
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
+            $base = $_POST["base"];
+            $expoente = $_POST["expoente"];
+            $potencia = $base ** $expoente;
+            echo "A $base elevada a $expoente é: $potencia";
+        }
 ?>

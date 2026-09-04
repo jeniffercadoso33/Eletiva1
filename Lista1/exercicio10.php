@@ -13,13 +13,13 @@
         <button type="submit">Enviar</button>
     </form>
     <?php
-    if($_SERVER['REQUEST_METHOD'] == 'POST')
-    {
-    $raio = $_POST["raio"];
-    $pi = 3.14159;
-    $perimetrocirculo = ($pi * $raio) * 2;
-    echo "O perímetro do círculo é: $perimetrocirculo";
-    }
+        if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $raio = $_POST["raio"];
+                $pi = 3.14159;
+                $perimetrocirculo = ($pi * $raio) * 2;
+                echo "O perímetro do círculo é: $perimetrocirculo";
+            }
     ?>
 </body>
 </html>
