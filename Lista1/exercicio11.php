@@ -23,6 +23,6 @@
             $base = $_POST["base"];
             $expoente = $_POST["expoente"];
             $potencia = $base ** $expoente;
-            echo "A $base elevada a $expoente é: $potencia";
+            echo "A base $base elevada ao expoente $expoente é: $potencia";
         }
 ?>
