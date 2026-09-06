@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 12</title>
+    <title>Exercício 13</title>
 </head>
 <body>
     <h1>Exercício de Exemplo</h1>
-    <form method="post" action="exercicio12.php">
-        <label for="valor"> Informe um valor em metros:</label>
+    <form method="post" action="exercicio13.php">
+        <label for="valor"> Informe um valor em quilômetros:</label>
         <input type="number" id="valor" name="valor">		
         <button type="submit">Enviar</button>
     </form>
@@ -16,10 +16,11 @@
 </html>
 
 <?php
-    if($_SERVER['REQUEST_METHOD'] == 'POST')
+if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             $valor = $_POST["valor"];
-            $conversormedida = $valor * 100;
-            echo "O $valor metros em centímetros é: $conversormedida";
-        }
-?>        
+            $milhas = 0.621371;
+            $convertemedida = $valor * $milhas;
+            echo "O perímetro do círculo é: $convertemedida";
+        }  
+?>
