@@ -20,5 +20,5 @@
         {
             $valor = $_POST["valor"];
             $conversormedida = $valor * 100;
-            echo "O $valor em centímetros é: $conversormedida";
+            echo "O $valor metros em centímetros é: $conversormedida";
         }
