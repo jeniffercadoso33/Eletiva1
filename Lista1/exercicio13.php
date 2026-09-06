@@ -21,6 +21,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             $valor = $_POST["valor"];
             $milhas = 0.621371;
             $convertemedida = $valor * $milhas;
-            echo "O perímetro do círculo é: $convertemedida";
+            echo "O $valor km em milhas é: $convertemedida";
         }  
 ?>
