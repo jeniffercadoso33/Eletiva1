@@ -17,7 +17,8 @@
 
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')
-    $valor = $_POST["valor"];
-    $conversormedida = $valor * 100;
-    echo "O $valor em centímetros é: $conversormedida";
-    
+        {
+            $valor = $_POST["valor"];
+            $conversormedida = $valor * 100;
+            echo "O $valor em centímetros é: $conversormedida";
+        }
