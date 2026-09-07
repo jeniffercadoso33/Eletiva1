@@ -24,7 +24,7 @@
             $numero = $_POST['numero'];
             $fatorial = 1;
                 
-            for($i=1;$i<=$numero; $i++)
+            for($i = $numero; $i >= 1; $i--)
 				{
 
                     $fatorial = $fatorial * $i;    
