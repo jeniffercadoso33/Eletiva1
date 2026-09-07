@@ -24,17 +24,15 @@
             $numero = $_POST['numero'];
             $contador = 1;
             $soma = 0;
-            $total = 0;
             while ($contador <= $numero)
 				{
 
 					$soma = $soma + $contador;
 
 					$contador ++;
-                    $soma ++;
 
 					echo "<p> $soma </p>";
-                    echo "<p> o total da soma dos numeros de 1 até o número informado é: $total </p>";
+                    
                 }
         }
 ?>
