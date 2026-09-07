@@ -9,7 +9,7 @@
 <body> 
 <div class="container py-3">
 <h1>Estrutura de Repetição com for</h1>
-<form method="post" action="l2exercicio5.php">
+<form method="post" action="l2exercicio8.php">
 <div class="mb-3">
               <label for="numero" class="form-label">Informe um número</label>
               <input type="number" id="numero" name="numero" class="form-control" required="">
