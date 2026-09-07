@@ -23,7 +23,7 @@
         {     
             $numero = $_POST['numero'];
                 
-            for($i=0;$i<=$numero; $i++)
+            for($i=1;$i<=$numero; $i++)
 				{
 
                 echo "<p> $i</p>";   
