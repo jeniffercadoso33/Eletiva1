@@ -26,15 +26,15 @@
                      
             if($valorproduto > 100)
                 {
-                    $novovalor = valorproduto - ($valorproduto * (15/100));
+                    $novovalor = $valorproduto - ($valorproduto * (15/100));
                     echo " <p> O valor do produto com desconto é: $novovalor <p>";         
                 }
 
             else
                 echo "<p> Produtos com valor menor que 100 não possui desconto <p>";
 
-               }
-        ?>
+        }
+?>
 
 </div>
 </body>
