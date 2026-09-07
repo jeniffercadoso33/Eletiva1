@@ -28,6 +28,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             $juros = $capital *($taxa / 100) * $periodo;
             $total = $capital + $juros;
             echo "O resultado dos juros simples sobre o capital é: $juros";
-            echo "O montante total será de : $total";
+            echo "\nO montante total será de : $total";
         }
 ?>
