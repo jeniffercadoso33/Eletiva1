@@ -25,9 +25,9 @@
             $contador = 1;
             
             do{
-                    echo "<p>$contador</p>";
-                    $contador--;
-                }while($contador <= $numero);
+                echo "<p>$contador</p>";
+                $contador--;
+            }while($contador <= $numero);
                     
                 }
         
