@@ -21,6 +21,7 @@
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
+            $valormes = $_POST['valormes'];
             switch($valormes)
                 {
                     case 1:
