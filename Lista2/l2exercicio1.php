@@ -9,7 +9,7 @@
 <body> 
 <div class="container py-3">
 <h1>Estrutura Condicional IF e SWITCH</h1>
-<form method="post">
+<form method="post" action="l2exercicio1.php">
 <div class="mb-3">
               <label for="valor" class="form-label">Informe o valor</label>
               <input type="number" id="valor" name="valor" class="form-control" required="">
