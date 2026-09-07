@@ -30,7 +30,7 @@
                     $fatorial = $fatorial * $i;    
             
                 }
-            echo "<p> $fatorial</p>";   
+            echo "<p> O fatorial do número informado é: $fatorial</p>";   
         }
 ?>
 </div>
