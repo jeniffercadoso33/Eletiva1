@@ -26,7 +26,7 @@
             while ($contador <= $numero)
 				{
 
-					$soma = $soma + $numero;
+					$soma = $soma + $contador;
 
 					$contador ++;
 
