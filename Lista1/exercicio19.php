@@ -22,6 +22,6 @@
     		$distancia = $_POST["distancia"];
     		$tempo = $_POST["tempo"];
    		    $velocidademedia = $distancia / $tempo;
-    		echo "O resultado da veocidade média é: $velocidademedia";
+    		echo "O resultado da velocidade média é: $velocidademedia km/h";
         }
 ?>
