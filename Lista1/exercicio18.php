@@ -21,7 +21,7 @@
     		$dia = $_POST["dia"];
     		$horas = $dia * 24;
     		$minutos = $horas * 60;
-    		$segundo = $minutos * 60;
+    		$segundos = $minutos * 60;
 
     		echo "<p>O valor de dias informados tem em horas: $horas</p>";
     		echo "<p>O valor de dias informados tem em minutos: $minutos</p>";
