@@ -29,18 +29,18 @@
             $valorb = $_POST['valorb'];
 
             $contador = 0;
-            if (valora < valorb)
+            if ($valora < $valorb)
                 {
-                    echo "valora  valorb";
+                    echo "$valora  $valorb";
                 }
-            elseif (valora > valorb)
+            elseif ($valora > $valorb)
                 {
-                    echo "valorb valora";
+                    echo "$valorb $valora";
                 }
             do{
                     echo "<p>$contador</p>";
                     $contador++;
-                }while($contador == valora && $contador == valorb );
+                }while($contador == $valora && $contador == $valorb );
 
 
 }
