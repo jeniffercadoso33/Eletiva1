@@ -23,7 +23,7 @@
 
 <?php
             
-    if($_POST)
+   if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
 
             $valor = $_POST['valor'];
