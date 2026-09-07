@@ -23,6 +23,7 @@
         {     
             $numero = $_POST['numero'];
             $contador = 1;
+            $soma = 0;
             while ($contador <= $numero)
 				{
 
