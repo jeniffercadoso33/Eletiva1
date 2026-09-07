@@ -34,7 +34,7 @@
                     $soma ++;
 
 					echo "<p> $soma </p>";
-                    echo "<p> o total da soma dos numeros de 1 até o npumero informado é: $total </p>";
+                    echo "<p> o total da soma dos numeros de 1 até o número informado é: $total </p>";
                 }
         }
 ?>
