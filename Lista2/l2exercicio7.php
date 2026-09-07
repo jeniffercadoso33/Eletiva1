@@ -22,14 +22,16 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {     
             $numero = $_POST['numero'];
-            $contador = 1;
+            $contador = $numero;
             
-            do{
+            do
+            {
                 echo "<p>$contador</p>";
                 $contador--;
-            }while($contador <= $numero);
+            }
+            while($contador >= 1);
                     
-                }
+        }
         
 ?>
 </div>
