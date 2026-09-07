@@ -11,7 +11,7 @@
         <label for="peso"> Informe o peso em kg:</label>
         <input type="number" id="peso" name="peso">
 	<label for="altura"> Informe a altura em metros:</label>
-        <input type="number" id="altura" name="altura">
+        <input type="number" id="altura" name="altura" step="0.01" min="0">
         <button type="submit">Enviar</button>
     </form>
 </body>
