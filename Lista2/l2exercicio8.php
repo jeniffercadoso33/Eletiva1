@@ -30,7 +30,6 @@
                     $fatorial = $fatorial * $i;    
             
                 }
-            echo "<p> $i</p>"; 
             echo "<p> $fatorial</p>";   
         }
 ?>
