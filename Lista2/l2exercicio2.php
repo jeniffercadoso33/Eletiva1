@@ -29,14 +29,7 @@
             $valorb = $_POST['valorb'];
 
             $contador = 0;
-            if ($valora < $valorb)
-                {
-                    echo "$valora  $valorb";
-                }
-            elseif ($valora > $valorb)
-                {
-                    echo "$valorb $valora";
-                }
+            
             do{
                     echo "<p>$contador</p>";
                     $contador++;
