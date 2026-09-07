@@ -25,9 +25,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     		$capital = $_POST["capital"];
     		$taxa = $_POST["taxa"];
     		$periodo = $_POST["periodo"];
-    		$juros = $capital *(1+($taxa / 100)) ** $periodo;
-		    $total = $capital + $juros;
-    		echo "O resultado dos juros compostos sobre o capital é: $juros";
-		    echo "<p> O montante do capital será de: $total</p>"; 
+    		$montante = $capital *(1+($taxa / 100)) ** $periodo;
+		    $juros = $montante - $capital ;
+		    echo "O montante do capital será de: $montante";
+            echo "<p>O resultado dos juros compostos sobre o capital é: $juros </p>"; 
 	    }
 ?>
