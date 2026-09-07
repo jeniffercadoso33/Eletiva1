@@ -60,7 +60,7 @@
 						echo "Dezembro";
 					    break;
                     default:
-                        echo "Valor diferente de 1, 2 ou 3";
+                        echo "Valor diferente de 1 ao 12";
                         break;
                }
         }
