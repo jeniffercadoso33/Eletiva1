@@ -30,25 +30,21 @@
 
             if ($valora < $valorb) 
                 {
-                    $inicio = $valora;
-                    $fim = $valorb;
+                    echo "$valora $valorb";
+                } 
+            elseif ($valora > $valorb) 
+                {
+                    echo "$valorb $valora";
                 } 
             else 
                 {
-                    $inicio = $valorb;
-                    $fim = $valora;
+                
+                    do 
+                        {
+                            echo $valora;
+                        } 
+                    while ($valora != $valorb); 
                 }
-
-            echo "<p>Resultado: ";
-
-            do 
-                {
-                    echo $inicio . " ";
-                    $inicio = $fim; 
-                } 
-            while ($inicio != $fim && $valora != $valorb);
-
-            echo "</p>";
 }
 
 ?>
