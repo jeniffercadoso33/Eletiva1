@@ -27,36 +27,28 @@
         {
             $valora = $_POST['valora'];
             $valorb = $_POST['valorb'];
-            
+
             if ($valora < $valorb) 
                 {
                     $inicio = $valora;
                     $fim = $valorb;
                 } 
-            elseif ($valora > $valorb) 
+            else 
                 {
                     $inicio = $valorb;
                     $fim = $valora;
-                } 
-            else 
-            {
-        
-                $inicio = $valora;
-                $fim = $valora;
-            }
+                }
 
             echo "<p>Resultado: ";
 
-    
-        do 
-            {
-            echo $inicio . " ";
-            $inicio++; // Avança de 1 em 1
-            } 
-        while ($inicio <= $fim); 
+            do 
+                {
+                    echo $inicio . " ";
+                    $inicio = $fim; 
+                } 
+            while ($inicio != $fim && $valora != $valorb);
 
-    echo "</p>";
-
+            echo "</p>";
 }
 
 ?>
