@@ -25,23 +25,34 @@
             
    if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
-            $valora = $_POST['valora'];
-            $valorb = $_POST['valorb'];
-
-            $contador = 0;
-            if ($valora < $valorb)
+            if ($valora < $valorb) 
                 {
-                    echo "$valora  $valorb";
-                }
-            elseif ($valora > $valorb)
+                    $inicio = $valora;
+                    $fim = $valorb;
+                } 
+            elseif ($valora > $valorb) 
                 {
-                    echo "$valorb $valora";
-                }
-            do{
-                    echo "<p>$contador</p>";
-                    $contador++;
-                }while($contador == $valora && $contador == $valorb );
+                    $inicio = $valorb;
+                    $fim = $valora;
+                } 
+            else 
+            {
+        
+                $inicio = $valora;
+                $fim = $valora;
+            }
 
+            echo "<p>Resultado: ";
+
+    
+        do 
+            {
+            echo $inicio . " ";
+            $inicio++; // Avança de 1 em 1
+            } 
+        while ($inicio <= $fim); 
+
+    echo "</p>";
 
 }
 
