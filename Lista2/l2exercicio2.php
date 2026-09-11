@@ -25,6 +25,9 @@
             
    if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
+            $valora = $_POST['valora'];
+            $valorb = $_POST['valorb'];
+            
             if ($valora < $valorb) 
                 {
                     $inicio = $valora;
