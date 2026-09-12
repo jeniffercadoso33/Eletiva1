@@ -39,7 +39,7 @@
                 echo "<p> Formatando a data </p>";
                 echo "<p>Dia: $dia </p>";
                 echo "<p>Mes: $mes </p>";
-                $tempo = date("d/m/Y H:i:s", strtotime("$ano-$mes-$dia"));
+                $tempo = date("d/m/Y", strtotime("$ano-$mes-$dia"));
                 echo "<p> $tempo </p>";
                     
         }
