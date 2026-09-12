@@ -25,9 +25,9 @@
                 {
                     echo "<p> Trabalhando maíusculas e minísculas </p>";
                     $ma = strtoupper($palavra);
-                    echo "<p>: $ma </p>";
+                    echo "<p> $ma </p>";
                     $mi = strtolower($palavra);
-                    echo "<p>: $mi </p>";
+                    echo "<p> $mi </p>";
 
                     }
 
