@@ -11,8 +11,8 @@
 <h1>Funções PHP</h1>
 <form method="post" action="l3exercicio5.php">
 <div class="mb-3">
-              <label for="numero" class="form-label">Informe um valor</label>
-              <input type="number" id="numero" name="numero" class="form-control" required="">
+              <label for="valor" class="form-label">Informe um valor</label>
+              <input type="number" id="valor" name="valor" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
@@ -22,12 +22,12 @@
         {
             $valor = $_POST['valor'];
             
-                {
-                    echo "<p> Trabalhando com raiz quadrada </p>";
-                    $raiz = sqrt($valor);
-                    echo "<p> A raiz quadrada de $valor é: $raiz</p>";
+                
+                echo "<p> Trabalhando com raiz quadrada </p>";
+                $raiz = sqrt($valor);
+                echo "<p> A raiz quadrada de $valor é: $raiz</p>";
 
-                    }
+                    
 
         }
 
