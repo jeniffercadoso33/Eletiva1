@@ -30,22 +30,20 @@
             $mes = $_POST['mes'] ?? 0;
             $ano = $_POST['ano'] ?? 0;
              if ($dia > 0 && $mes > 0 && $ano > 0 ) 
-                {
+                
                 
                     {
                         $v = checkdate($mes , $dia , $ano);
                         echo "<p> Verificando a validade da data: $v </p>";
                     }
                 echo "<p> Formatando a data </p>";
-                $dia = date("d");
                 echo "<p>Dia: $dia </p>";
-                $mes = date("m");
                 echo "<p>Mes: $mes </p>";
-                $tempo = date("d/m/Y H:i:s");
-                echo "<p> $tempo </p>";    
+                $tempo = date("d/m/Y H:i:s", strtotime("$ano-$mes-$dia"));
+                echo "<p> $tempo </p>";
                     
-                    }
-                }
+        }
+                
 
         
 
