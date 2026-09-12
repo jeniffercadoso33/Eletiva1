@@ -31,9 +31,10 @@
             $ano = $_POST['ano'] ?? 0;
              if ($dia > 0 && $mes > 0 && $ano > 0 ) 
                 {
-                echo "<p> Verificando a validade da data: </p>";
+                
                     {
-                        echo  checkdate($mes , $dia , $ano);
+                        $v = checkdate($mes , $dia , $ano);
+                        echo "<p> Verificando a validade da data: $v </p>";
                     }
                 echo "<p> Formatando a data </p>";
                 $dia = date("d");
