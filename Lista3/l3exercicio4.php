@@ -9,7 +9,7 @@
 <body> 
 <div class="container py-3" action="l4exercicio4.php">
 <h1>Funções PHP</h1>
-<form method="post">
+<form method="post" action="l3exercicio4.php">
 <div class="mb-3">
               <label for="dia" class="form-label">Informe o dia</label>
               <input type="number" id="dia" name="dia" class="form-control" required="">
