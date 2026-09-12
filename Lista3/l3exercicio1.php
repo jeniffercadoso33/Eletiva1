@@ -21,11 +21,11 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             $palavra = $_POST['palavra'] ?? "";
-            if($nome != "" )
+            if($palavra != "" )
                 {
                     echo "<p> Funções do PHP </p>";
-                    $qtd = strlen($nome);
-                    echo "<p>Qtd de caracteres do nome: $qtd </p>";
+                    $qtd = strlen($palavra);
+                    echo "<p>Qtd de caracteres da palavra: $qtd </p>";
 
                     }
 
