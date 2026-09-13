@@ -44,7 +44,7 @@
                                 }
                         }
 
-                    echo "<p>Total de palavras:" . $totalPalavras . "</p>";
+                    echo "<p>Total de palavras: " . $totalPalavras . "</p>";
                     echo "<p>Maior palavra: " . htmlspecialchars($maiorPalavra, ENT_QUOTES, 'UTF-8') . "</p>";
                 }   
             else 
