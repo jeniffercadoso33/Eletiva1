@@ -22,7 +22,8 @@
         {
            $palavra = trim(filter_input(INPUT_POST, 'palavra', FILTER_DEFAULT) ?? '');
 
-            // Esta funçãoirá verifica se a variável não está vazia após o trim
+            // Esta função irá verificar se a variável não está vazia após o trim
+            // utlizado funções que podem receber qualquer tipo de escrita do usuário
             if ($palavra !== '') 
                 {
                     echo "<p>Trabalhando com inversão das letras</p>";
