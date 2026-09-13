@@ -36,8 +36,8 @@
             // Aqui irá juntar todas as iniciais separadas por ponto
             $resultadoIniciais = implode('.', $iniciais) . '.';
 
-            echo "<p><strong>Nome informado:</strong> " . htmlspecialchars($nome, ENT_QUOTES, 'UTF-8') . "</p>";
-            echo "<p><strong>Iniciais:</strong> " . htmlspecialchars($resultadoIniciais, ENT_QUOTES, 'UTF-8') . "</p>";
+            echo "<p>Nome informado: " . htmlspecialchars($nome, ENT_QUOTES, 'UTF-8') . "</p>";
+            echo "<p>Iniciais: " . htmlspecialchars($resultadoIniciais, ENT_QUOTES, 'UTF-8') . "</p>";
                 } 
             else 
                 {
