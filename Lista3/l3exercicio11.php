@@ -18,25 +18,24 @@
 </form>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') 
-        {
-            $numero = filter_input(INPUT_POST, 'numero', FILTER_VALIDATE_FLOAT);
+   if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+    {
+        $numero = filter_input(INPUT_POST, 'numero', FILTER_VALIDATE_FLOAT);
 
-             if ($numero !== false && $numero !== null) 
-                {
-                    echo "<p>Trabalhando com formatos</p>";
+        if ($numero !== false && $numero !== null) 
+            {
+                echo "<p>Trabalhando com formatos</p>";
 
-                    // Aqui irá criar o formatador para a moeda brasileira
-                    $formatador = new NumberFormatter('pt_BR', NumberFormatter::CURRENCY);
+                // Aqui irá formatar o número no padrão brasileiro
+                $valorFormatado = "R$ " . number_format($numero, 2, ',', '.');
 
-                     // Aqui irá exibir o número recebido formatado em BRL (R$)
-                     echo "<p>Valor formatado: " . $formatador->formatCurrency($numero, 'BRL') . "</p>";
-                } 
-            else
-                {
-                    echo "<p>Por favor, informe um número válido.</p>";
-                }
-        }
+                echo "<p>Valor formatado: " . $valorFormatado . "</p>";
+            } 
+        else
+            {
+                echo "<p>Por favor, informe um número válido.</p>";
+            }
+    }
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </div>
