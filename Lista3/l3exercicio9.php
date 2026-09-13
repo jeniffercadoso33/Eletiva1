@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fraseSemNenhumEspaco = str_replace(' ', '', $fraseSemEspacosInFim);
 
         echo "<p>Frase original: " . htmlspecialchars($fraseOriginal, ENT_QUOTES, 'UTF-8') . "</p>";
-        echo "<p>Sem espaços no início e final:" . htmlspecialchars($fraseSemEspacosInFim, ENT_QUOTES, 'UTF-8') . "</p>";
+        echo "<p>Sem espaços no início e final: " . htmlspecialchars($fraseSemEspacosInFim, ENT_QUOTES, 'UTF-8') . "</p>";
         echo "<p>Com todos os espaços removidos: " . htmlspecialchars($fraseSemNenhumEspaco, ENT_QUOTES, 'UTF-8') . "</p>";
     } else {
         echo "<p>Por favor, digite uma frase válida.</p>";
