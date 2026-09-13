@@ -12,7 +12,7 @@
 <form method="post" action="l3exercicio6.php">
 <div class="mb-3">
               <label for="numero" class="form-label">Informe um número de ponto flutuante(decimal, fracionário, por exemplo)</label>
-              <input type="number" id="numero" name="numero" class="form-control" required="">
+              <input type="number" id="numero" name="numero" step="any" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
@@ -20,24 +20,19 @@
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
-            $numero = $_POST['numero'];
-            
-                
-                echo "<p> Trabalhando com arredondamento </p>";
-                $arrecima = ceil($numero);
-                echo "<p> Arredondado para cima:  $arrecima</p>";
-                $arrebaixo = floor($numero);
-                echo "<p> Arredondado para baixo:  $arrebaixo</p>";
-                $arrenormal = round($numero);
-                echo "<p> Arredondado normalmente:  $arrenormal</p>";
-
-                    
-
+            $numero = filter_input(INPUT_POST, 'numero', FILTER_VALIDATE_FLOAT);
+            if ($numero !== false && $numero !== null) 
+                {
+                    echo "<p> Trabalhando com arredondamento </p>";
+                    $arrecima = ceil($numero);
+                    echo "<p> Arredondado para cima:  $arrecima</p>";
+                    $arrebaixo = floor($numero);
+                    echo "<p> Arredondado para baixo:  $arrebaixo</p>";
+                    $arrenormal = round($numero);
+                    echo "<p> Arredondado normalmente:  $arrenormal</p>";
+                }
         }
-
 ?>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </div>
 </body>
