@@ -25,16 +25,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Aqui remove apenas os espaços do início e do final
     $fraseSemEspacosInFim = trim($fraseOriginal);
 
-    if ($fraseSemEspacosInFim !== '') {
-        // Aqui remove todos os espaços da frase
-        $fraseSemNenhumEspaco = str_replace(' ', '', $fraseSemEspacosInFim);
+    if ($fraseSemEspacosInFim !== '') 
+        {
+            // Aqui remove todos os espaços da frase
+            $fraseSemNenhumEspaco = str_replace(' ', '', $fraseSemEspacosInFim);
 
-        echo "<p>Frase original: " . htmlspecialchars($fraseOriginal, ENT_QUOTES, 'UTF-8') . "</p>";
-        echo "<p>Sem espaços no início e final: [" . htmlspecialchars($fraseSemEspacosInFim, ENT_QUOTES, 'UTF-8') . "]</p>";
-        echo "<p>Com todos os espaços removidos: [" . htmlspecialchars($fraseSemNenhumEspaco, ENT_QUOTES, 'UTF-8') . "]</p>";
-    } else {
-        echo "<p>Por favor, digite uma frase válida.</p>";
-    }
+            // Utilizando colchetes para melhor visualizar a remoção dos espaços
+            echo "<p>Frase original: [" . htmlspecialchars($fraseOriginal, ENT_QUOTES, 'UTF-8') . "]</p>";
+            echo "<p>Sem espaços no início e final: [" . htmlspecialchars($fraseSemEspacosInFim, ENT_QUOTES, 'UTF-8') . "]</p>";
+            echo "<p>Com todos os espaços removidos: [" . htmlspecialchars($fraseSemNenhumEspaco, ENT_QUOTES, 'UTF-8') . "]</p>";
+        } 
+    else 
+        {
+            echo "<p>Por favor, digite uma frase válida.</p>";
+        }
 }
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
