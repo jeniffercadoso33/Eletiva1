@@ -31,6 +31,7 @@
                     // Utilizado Expressão regular que busca todas as vogais (maiúsculas, minúsculas e acentuadas)
                     // O modificador 'u' no final garante o suporte a caracteres UTF-8
                     $qtdvogais = preg_match_all('/[aáàâãeéêiíoóôõuú]/ui', $frase);
+                    echo "<p>Quantidade de vogais na frase: $qtdvogais</p>";
                    
                 } 
             else 
