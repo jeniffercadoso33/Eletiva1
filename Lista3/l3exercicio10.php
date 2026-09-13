@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Funções PHP</title>
+<title></title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body> 
 <div class="container py-3">
 <h1></h1>
-<form method="post"  action="l3exercicio7.php">
+<form method="post"  action="l3exercicio10.php">
 <div class="mb-3">
-              <label for="palavra" class="form-label">Informe uma palavra</label>
-              <input type="text" id="palavra" name="palavra" class="form-control" required="">
+              <label for="nome" class="form-label">Informe nome completo</label>
+              <input type="text" id="nome" name="nome" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
@@ -20,23 +20,19 @@
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
-           $palavra = trim(filter_input(INPUT_POST, 'palavra', FILTER_DEFAULT) ?? '');
+           $nome = trim(filter_input(INPUT_POST, 'nome', FILTER_DEFAULT) ?? '');
 
             // Esta função irá verificar se a variável não está vazia após o trim
             // utilizado funções que podem receber qualquer tipo de escrita do usuário
-            if ($palavra !== '') 
+            if ($nome !== '') 
                 {
-                    echo "<p>Trabalhando com inversão das letras</p>";
+                    echo "<p>Encontrando as iniciais do nome</p>";
 
-                    // Aqui irá inverter a palavra tratando UTF-8
-                    $inv = implode('', array_reverse(mb_str_split($palavra)));
-
-                    // aqui irá exibir com proteção contra XSS
-                    echo "<p>" . htmlspecialchars($inv, ENT_QUOTES, 'UTF-8') . "</p>";
+                   
                 } 
             else 
                 {
-                    echo "<p>Por favor, digite uma palavra válida.</p>";
+                    echo "<p>Por favor, digite um nome válido.</p>";
                 }
         }
 ?>
