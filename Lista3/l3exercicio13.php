@@ -9,7 +9,7 @@
 <body> 
 <div class="container py-3">
 <h1>Funções PHP</h1>
-<form method="post"  action="l3exercicio8.php">
+<form method="post"  action="l3exercicio13.php">
 <div class="mb-3">
               <label for="frase" class="form-label">Informe uma frase</label>
               <input type="text" id="frase" name="frase" class="form-control" required="">
