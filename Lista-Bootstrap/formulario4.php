@@ -29,18 +29,11 @@
 
         <div class="col-md-2">
           <label for="nivel" class="form-label fw-bold">Nível:</label>
-          <div class="input-group">
-            <select id="nivel" name="nivel" class="form-select">
-              <option selected>...</option>
-              <option>Administrador</option>
-              <option>Usuário</option>
-            </select>
-            <span class="input-group-text bg-secondary-subtle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-              </svg>
-            </span>
-          </div>
+          <select id="nivel" name="nivel" class="form-select bg-body-secondary">
+            <option selected>...</option>
+            <option>Administrador</option>
+            <option>Usuário</option>
+          </select>
         </div>
 
         <div class="col-md-6">
@@ -55,18 +48,11 @@
 
         <div class="col-md-2">
           <label for="status" class="form-label fw-bold">Status:</label>
-          <div class="input-group">
-            <select id="status" name="status" class="form-select">
-              <option selected>...</option>
-              <option>Ativo</option>
-              <option>Inativo</option>
-            </select>
-            <span class="input-group-text bg-secondary-subtle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-              </svg>
-            </span>
-          </div>
+          <select id="status" name="status" class="form-select bg-body-secondary">
+            <option selected>...</option>
+            <option>Ativo</option>
+            <option>Inativo</option>
+          </select>
         </div>
 
       </div>
