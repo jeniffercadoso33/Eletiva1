@@ -12,7 +12,6 @@
     
     <form method="post" action="formulario4.php">
       <div class="row g-3">
-        
         <div class="col-12">
           <label for="nome" class="form-label fw-bold">Nome:</label>
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Informe o nome">
